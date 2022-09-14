@@ -13,7 +13,7 @@ def linearSearch(array,size,key):
         remPart=linearSearch(array[i:],size-1,key)
         return remPart
 
-arr=[2,3,4,5,6]
+arr=[6]
 size=len(arr)
 ans=linearSearch(arr,size,11)
 if ans:
