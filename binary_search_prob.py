@@ -4,6 +4,7 @@
 #binary search time complexity O(logn)
 import math as mt
 def first_occurence(array,key):
+    ans=-1
     start=0
     end=len(array)-1
     mid=mt.floor((start+end)/2)
@@ -22,6 +23,7 @@ def first_occurence(array,key):
     return ans
 
 def last_occurence(array,key):
+    ans=-1
     start=0
     end=len(array)-1
     mid=mt.floor((start+end)/2)
@@ -40,5 +42,8 @@ def last_occurence(array,key):
     return ans
 
 arr=[11,12,13,14,14,14]
-print(last_occurence(arr,14))
+end=last_occurence(arr,14)
+start=first_occurence(arr,14)
+print("Total no of occurences ",(end-start)+1)
+
         
