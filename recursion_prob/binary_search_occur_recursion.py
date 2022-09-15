@@ -49,27 +49,4 @@ print("number of occurences is ",(end-start)+1)
 
     
     
-        
-
-
-"""def last_occurence(array,key):
-    start=0
-    end=len(array)-1
-    mid=mt.floor((start+end)/2)
-    while (start <= end):
-        #three conditions
-        if array[mid]==key:
-            #store the answer
-            ans=mid
-            #checking last_occurence
-            start=mid+1
-        elif array[mid]<key:
-            start=mid+1
-        elif array[mid]>key:
-            end=mid-1
-        mid=mt.floor((start+end)/2)
-    return ans
-
-arr=[11,12,13,14,14,14]
-print(last_occurence(arr,14))
-"""        
+   
